@@ -1,0 +1,22 @@
+#+title: Qmk Firmware for Skeletyl with Single Board Blackpill f401
+
+** Flashing the Firmware
+*** 1. Add bastardkb-qmk git repo to your qmk root folder
+#+begin_src bash
+# on qmk-firmware root folder
+git remote add bastardkb git@github.com:Bastardkb/bastardkb-qmk.git # Using SSR
+git fetch bastardkb
+git checkout --track bastardkb/bkb-master
+#+end_src
+*** 2. Rename "skeletyl" directory to "skeletyl_backup"
+#+begin_src bash
+mv qmk_firmware/keyboards/bastardkb/skeletyl qmk_firmware/keyboards/bastardkb/skeletyl_backup
+#+end_src
+*** 3. Clone this repo to "bastardkb" directory
+#+begin_src bash
+git clone git@github.com:sahidrahman404/skeletyl_singleboard_blackpill_f401.git qmk_firmware/keyboards/bastardkb/skeletyl
+#+end_src
+*** 4. Flash the firmware
+#+begin_src bash
+qmk flash -kb bastardkb/skeletyl/blackpill -km manna-harbour_miryoku
+#+end_src
