@@ -20,9 +20,6 @@
 
 #include "config_common.h"
 
-#define VENDOR_ID 0xA8F8
-#define DEVICE_VER 0x0001
-
 /* Key matrix configuration. */
 #define MATRIX_ROWS 4
 #define MATRIX_COLS 10 // Cols are doubled-up.
