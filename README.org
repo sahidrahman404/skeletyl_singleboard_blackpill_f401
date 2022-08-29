@@ -30,7 +30,7 @@
 ** Flashing the Firmware
 *** 1. Clone this repo to your qmk "keyboards directory"
 #+begin_src bash
-git clone git@github.com:sahidrahman404/skeletyl_singleboard_blackpill_f401.git qmk_firmware/keyboards/skeletyl
+git clone git@github.com:sahidrahman404/skeletyl_singleboard_blackpill_f401.git ~/qmk_firmware/keyboards/skeletyl
 #+end_src
 *** 2. Flash the firmware
 #+begin_src bash
