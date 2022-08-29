@@ -37,4 +37,4 @@ git clone git@github.com:sahidrahman404/skeletyl_singleboard_blackpill_f401.git 
 qmk flash -kb skeletyl/blackpill -km manna-harbour_miryoku
 #+end_src
 
-- If you have a hard time entering dfu mode, try pull A10 pin to GND
+- If you have a hard time entering dfu mode, try pulling A10 pin to GND
